@@ -1,0 +1,201 @@
+pwd
+cd /
+pwd
+ls
+man ls
+ls -a
+ls -l
+ls -a -l
+ls -la
+echo $HOME
+pwd
+whoami
+cd ubuntu
+ls
+cd $HOME
+pwd
+ls
+cd carpeta_compartida/
+ls
+ls -a
+cd ..
+pwd
+ls
+man cat
+cat README
+cp README carpeta_compartida/
+cd carpeta_compartida/
+ls
+cd /
+pwd
+ls
+cd etc/
+ls
+cat passwd
+cat shadow
+cd
+ls
+cd carpeta_compartida/
+ls
+cat Vagrantfile 
+grep ip Vagrantfile 
+pwd
+cd
+pwd
+ls
+cd /
+ls
+ls -a
+cat dsmg
+cd log
+cd
+pwd
+sudo apt install git
+git --version
+ssh-keygen
+ls
+ls -a
+cd .ssh
+ls
+cat id_rsa.pub
+cd
+git clone git@github.com:grxywarxn/ArqYSO.git
+ls
+cd ArqYSO/
+ls
+cd ..
+ls
+cp README ArqYSO/
+ls
+cd ArqYSO/
+ls
+git status
+git add README 
+git status
+git commit -m "Primer archivo"
+git status
+git commit -m "Primer archivo"
+git config --global user.name "grxywarxn"
+git commit -m "Primer archivo"
+git push origin main
+cat << FIN >> README
+Luis
+FIN
+
+git status
+git add
+git add README 
+git status
+git commit -m "Agrego linea nueva"
+git push origin main
+cd
+vagrant halt
+cd
+pwd
+vagrant exit
+exit
+ls -la
+cat << FIN > archivo.txt
+linea 1
+linea 2
+linea 3
+FIN
+
+cat archivo.txt
+cat << FIN >> archivo.txt
+linea 4
+linea 5
+FIN
+
+cat archivo.txt 
+tac archivo.txt 
+bc <<< 1+2
+echo "hola mundo" | wc
+cat archivo.txt | head -n 1
+tac archivo.txt | head -n 1
+cat archivo.txt | head -n 2 | grep 5
+tac archivo.txt | head -n 2 | grep 5
+cat /proc/cpuinfo 
+grep -i proce /proc/cpuinfo 
+nproc
+cat /proc/cpuinfo | grep -i proce
+ls -la
+cd clase 3
+cd clase3
+man rmdir
+vm archivo.txt lineas.txt
+apt install mgetty-voice
+man vm
+ls -la
+mv archivo.txt lineas.txt
+ls
+man mkdir
+man history
+history 
+history > historial.txt
+ls
+cat historial.txt 
+cp historial.txt carpeta_compartida/
+ls
+vim lineas.txt 
+vim ejecutable.sh
+ls
+cat historial.txt 
+ls
+cat ejecutable.sh 
+./ejecutable.sh
+vim ejecutable.sh 
+chmod 777 ejecutable.sh 
+./ejecutable.sh 
+echo "Usuario=$(whoami)"
+vagrant halt
+home
+cd home
+ls
+vagrant quit
+vagrant status
+halt
+man halt
+vagrant halt
+ssh-keygen
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:grxywarxn/TP_AySO.git
+cd TP_AySO/
+pwd
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i Home_url /etc/os-release
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+git add .
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt 
+cat datos_usuario.txt 
+git add .
+git commit -m "feat: Añadiendo informacion de CPU"
+man grep
+grep -v "nologin" /etc/passwd | sort -t ':' -k7 | head -n 10 > lista_ordenada
+git add .
+git commit -m "ADD: Lista de usuarios ordenada"
+tcpdump --version 
+echo "El comando para realizar un dump traffic es: tcpdump" > comando_dump_net
+apropos traffic
+echo "El comando para realizar la busqueda del comando anterior fue: apropos traffic" >> comando_dump_net
+git add .
+git commit -m "ADD: Comando para Capturar y analizar el tráfico de red"
+cat << EOF >> README.md 
+Alumno: Luis Claros
+División: 114
+Turno: Mañana
+EOF
+
+git add README.md 
+git commit -m "docs: agregué mis datos de alumno em el README"
+history -a
